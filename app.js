@@ -314,7 +314,7 @@ async function sendMsg() {
   const systemPrompt = `You are ფინო, a friendly Georgian financial assistant app. Help users with loans, savings, budgets and currency in Georgia. Georgian banks and rates: TBC Bank 15-22%, Bank of Georgia 16-24%, Liberty Bank 18-26%, Credo Bank 19-28%, Basisbank 17-25%. ${context}Always be warm and simple. Respond in Georgian by default, English if user writes English. Max 3 sentences unless explaining something complex. After loan questions always ask: გსურს ბანკმა პირდაპირ დაგიკავშირდეს?`;
 
   try {
-    const GEMINI_KEY = window.GEMINI_API_KEY || 'gemini key';
+    const GEMINI_KEY = window.GEMINI_API_KEY || 'AIzaSyC2MgbJ0DDD2eWqM8MfQi9wXfmT4Qpl_cw';
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
